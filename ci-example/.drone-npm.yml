@@ -1,0 +1,35 @@
+# Note: You have to add drone_ssh_key to the secrets in the drone settings.
+
+---
+kind: pipeline
+type: docker
+name: default
+trigger:
+  branch:
+    - master
+
+steps:
+- name: Hugo version
+  image: xdevbase/hugo-builder:latest-npm
+  commands:
+    - echo "Hugo version."
+    - hugo version
+
+- name: Build and minify files
+  image: xdevbase/hugo-builder:latest-npm
+  commands:
+    - npm install
+    - hugo --destination /drone/src/build
+    - minify -r -o /drone/src/build /drone/src/build
+
+- name: Deploy with rsync to remote server
+  image: xdevbase/hugo-builder:latest-npm
+  commands:
+    - eval `ssh-agent -s`
+    - echo "$SSH_KEY" | ssh-add -
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rv -e "ssh -p 22" /drone/src/build/ drone@<domain>.<tld>:</path/to/<damain>.<tld>/ --checksum
+  environment:
+    SSH_KEY:
+      from_secret: drone_ssh_key
