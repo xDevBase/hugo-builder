@@ -85,6 +85,7 @@ The Docker image `latest` and `x.xx` version comes with:
 
 - rsync
 - git
+- make
 - openssh-client
 - [minify](https://github.com/tdewolff/minify)
 
