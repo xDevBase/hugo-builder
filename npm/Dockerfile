@@ -4,7 +4,7 @@
 # that can be found in the LICENSE file.
 #
 
-FROM xdevbase/hugo-builder:0.82
+FROM xdevbase/hugo-builder:0.83
 
 MAINTAINER Thomas Harr <xdevthomas@gmail.com>
 
