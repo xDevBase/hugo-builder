@@ -4,9 +4,7 @@
 # that can be found in the LICENSE file.
 #
 
-FROM xdevbase/hugo-builder:0.83
-
-MAINTAINER Thomas Harr <xdevthomas@gmail.com>
+FROM xdevbase/hugo-builder:0.84
 
 LABEL maintainer="Thomas Harr <xdevthomas@gmail.com>" \
   url="xdevcloud.de"
@@ -14,5 +12,5 @@ LABEL maintainer="Thomas Harr <xdevthomas@gmail.com>" \
 RUN apk update && \
   apk upgrade -a && \
   apk add --no-cache \
-      npm && \
+  npm && \
   rm -rf /var/cache/apk/*

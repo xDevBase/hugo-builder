@@ -6,24 +6,22 @@
 
 FROM alpine:latest
 
-MAINTAINER Thomas Harr <xdevthomas@gmail.com>
-
 LABEL maintainer="Thomas Harr <xdevthomas@gmail.com>" \
   url="xdevcloud.de"
 
 RUN apk update && \
   apk upgrade -a && \
   apk add --no-cache \
-      curl \
-      git \
-      make \
-      libc6-compat \
-      libstdc++ \
-      openssh-client \
-      rsync && \
+  curl \
+  git \
+  make \
+  libc6-compat \
+  libstdc++ \
+  openssh-client \
+  rsync && \
   rm -rf /var/cache/apk/*
 
-ENV VERSION 0.83.1
+ENV VERSION 0.84.0
 
 RUN mkdir -p /usr/local/src && \
   cd /usr/local/src && \
