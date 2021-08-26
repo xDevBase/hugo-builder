@@ -1,9 +1,7 @@
 # Hugo Builder Image
 
 [![Docker Automated build](https://img.shields.io/docker/automated/xdevbase/hugo-builder.svg)](https://store.docker.com/community/images/xdevbase/hugo-builder)
-[![Docker Build Status](https://img.shields.io/docker/build/xdevbase/hugo-builder.svg)](https://hub.docker.com/r/xdevbase/hugo-builder/builds)
 [![Docker Pulls](https://img.shields.io/docker/pulls/xdevbase/hugo-builder.svg)](https://store.docker.com/community/images/xdevbase/hugo-builder)
-[![Image Info](https://images.microbadger.com/badges/image/xdevbase/hugo-builder.svg)](https://microbadger.com/images/xdevbase/hugo-builder)
 [![GitHub](https://img.shields.io/github/license/xdevbase/hugo-builder.svg)](https://img.shields.io/github/license/xdevbase/hugo-builder)
 
 This project originated from the great work of [Julien Guyomard](https://github.com/jguyomard) and his [Hugo Docker Image](https://github.com/jguyomard/docker-hugo). Unfortunately, it seems like the original project is no longer being maintained
