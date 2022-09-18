@@ -21,7 +21,7 @@ RUN apk update && \
   rsync && \
   rm -rf /var/cache/apk/*
 
-ENV VERSION 0.103.0
+ENV VERSION 0.103.1
 
 RUN mkdir -p /usr/local/src && \
   cd /usr/local/src && \
