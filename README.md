@@ -4,7 +4,6 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/xdevbase/hugo-builder.svg)](https://store.docker.com/community/images/xdevbase/hugo-builder)
 [![GitHub](https://img.shields.io/github/license/xdevbase/hugo-builder.svg)](https://img.shields.io/github/license/xdevbase/hugo-builder)
 
-This project originated from the great work of [Julien Guyomard](https://github.com/jguyomard) and his [Hugo Docker Image](https://github.com/jguyomard/docker-hugo). Unfortunately, it seems like the original project is no longer being maintained
 
 [Hugo](https://gohugo.io/) is a fast and flexible static site generator, written in Go.
 Hugo flexibly works with many formats and is ideal for blogs, docs, portfolios and much more.
@@ -130,6 +129,10 @@ If the issue is related to Hugo itself, please leave an issue on the [Hugo offic
 ## 👪 Contributing
 
 You are invited to contribute new features, fixes or updates to this container, through a [Github Pull Request](https://github.com/xdevbase/hugo-builder/pulls).
+
+## 🙏 Contributors
+
+Origin Julien Guyomard [jguyomard](https://github.com/jguyomard)
 
 ## 📜 License
 
