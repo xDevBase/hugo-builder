@@ -4,13 +4,13 @@
 # that can be found in the LICENSE file.
 #
 
-FROM xdevbase/hugo-builder:0.105
+FROM xdevbase/hugo-builder:0.106
 
 LABEL maintainer="Thomas Harr <xdevthomas@gmail.com>" \
-  url="xdevcloud.de"
+    url="xdevcloud.de"
 
 RUN apk update && \
-  apk upgrade -a && \
-  apk add --no-cache \
-  npm && \
-  rm -rf /var/cache/apk/*
+    apk upgrade -a && \
+    apk add --no-cache \
+    npm && \
+    rm -rf /var/cache/apk/*

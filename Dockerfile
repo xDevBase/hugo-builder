@@ -7,30 +7,30 @@
 FROM alpine:latest
 
 LABEL maintainer="Thomas Harr <xdevthomas@gmail.com>" \
-  url="xdevcloud.de"
+    url="xdevcloud.de"
 
 RUN apk update && \
-  apk upgrade -a && \
-  apk add --no-cache \
-  curl \
-  git \
-  make \
-  libc6-compat \
-  libstdc++ \
-  openssh-client \
-  rsync && \
-  rm -rf /var/cache/apk/*
+    apk upgrade -a && \
+    apk add --no-cache \
+    curl \
+    git \
+    make \
+    libc6-compat \
+    libstdc++ \
+    openssh-client \
+    rsync && \
+    rm -rf /var/cache/apk/*
 
-ENV VERSION 0.105.0
+ENV VERSION 0.106.0
 
 RUN mkdir -p /usr/local/src && \
-  cd /usr/local/src && \
-  curl -L https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_extended_${VERSION}_Linux-64bit.tar.gz | tar -xz && \
-  mv hugo /usr/local/bin/hugo && \
-  curl -L https://github.com/tdewolff/minify/releases/download/v2.9.10/minify_linux_amd64.tar.gz | tar -xz && \
-  mv minify /usr/local/bin/ && \
-  addgroup -Sg 1000 hugo && \
-  adduser -SG hugo -u 1000 -h /src hugo
+    cd /usr/local/src && \
+    curl -L https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_extended_${VERSION}_Linux-64bit.tar.gz | tar -xz && \
+    mv hugo /usr/local/bin/hugo && \
+    curl -L https://github.com/tdewolff/minify/releases/download/v2.9.10/minify_linux_amd64.tar.gz | tar -xz && \
+    mv minify /usr/local/bin/ && \
+    addgroup -Sg 1000 hugo && \
+    adduser -SG hugo -u 1000 -h /src hugo
 
 WORKDIR /src
 
