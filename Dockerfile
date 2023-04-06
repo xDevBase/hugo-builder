@@ -23,11 +23,11 @@ RUN apk update && \
     rm -rf /var/cache/apk/*  && \
     ln -s /lib/libc.so.6 /usr/lib/libresolv.so.2
 
-ENV VERSION 0.111.3
+ENV HUGO 0.111.3
 
 RUN mkdir -p /usr/local/src && \
     cd /usr/local/src && \
-    curl -L https://github.com/gohugoio/hugo/releases/download/v${VERSION}/hugo_extended_${VERSION}_Linux-64bit.tar.gz | tar -xz && \
+    curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO}/hugo_extended_${HUGO}_Linux-64bit.tar.gz | tar -xz && \
     mv hugo /usr/local/bin/hugo && \
     curl -L https://github.com/tdewolff/minify/releases/download/v2.9.10/minify_linux_amd64.tar.gz | tar -xz && \
     mv minify /usr/local/bin/ && \
