@@ -15,11 +15,13 @@ RUN apk update && \
     curl \
     git \
     make \
+    gcompat \
     libc6-compat \
     libstdc++ \
     openssh-client \
     rsync && \
-    rm -rf /var/cache/apk/*
+    rm -rf /var/cache/apk/*  && \
+    ln -s /lib/libc.so.6 /usr/lib/libresolv.so.2
 
 ENV VERSION 0.111.3
 
