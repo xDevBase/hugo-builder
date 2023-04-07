@@ -8,10 +8,9 @@ on:
     branches: ["main"]
 
 env:
-  # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
-  TEST_TAG_BASE: ${{ github.repository }}:test
-  TEST_TAG_NPM: ${{ github.repository }}:test-npm
+  IMAGE_NAME: xdevbase/hugo-builder
+  TEST_TAG_BASE: xdevbase/hugo-builder:test
+  TEST_TAG_NPM: xdevbase/hugo-builder:test-npm
 
 jobs:
   build:
