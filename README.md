@@ -4,7 +4,6 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/xdevbase/hugo-builder.svg)](https://store.docker.com/community/images/xdevbase/hugo-builder)
 [![GitHub](https://img.shields.io/github/license/xdevbase/hugo-builder.svg)](https://img.shields.io/github/license/xdevbase/hugo-builder)
 
-
 [Hugo](https://gohugo.io/) is a fast and flexible static site generator, written in Go.
 Hugo flexibly works with many formats and is ideal for blogs, docs, portfolios and much more.
 Hugo’s speed fosters creativity and makes building a website fun again.
@@ -136,6 +135,6 @@ Origin Julien Guyomard [jguyomard](https://github.com/jguyomard)
 
 ## 📜 License
 
-Copyright (c) 2020 Thomas Harr. Released under the MIT License. See [LICENSE][license] for details.
+Copyright (c) 2023 Thomas Harr. Released under the MIT License. See [LICENSE][license] for details.
 
 [license]: LICENSE

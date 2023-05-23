@@ -1,5 +1,5 @@
 #
-# Copyright © 2020 Thomas Harr. All rights reserved.
+# Copyright © 2023 Thomas Harr. All rights reserved.
 # Use of this source code is governed by MIT license
 # that can be found in the LICENSE file.
 #
