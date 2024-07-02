@@ -95,8 +95,8 @@ The latest builds are:
 
 - [`latest`](https://github.com/xdevbase/hugo-builder/blob/main/Dockerfile)
 - [`latest-npm`](https://github.com/xdevbase/hugo-builder/blob/main/npm/Dockerfile)
-- [`0.128`](https://github.com/xdevbase/hugo-builder/blob/v0.128.0/Dockerfile)
-- [`0.128-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.128.0/npm/Dockerfile)
+- [`0.128`](https://github.com/xdevbase/hugo-builder/blob/v0.128.1/Dockerfile)
+- [`0.128-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.128.1/npm/Dockerfile)
 - [`0.127`](https://github.com/xdevbase/hugo-builder/blob/v0.127.0/Dockerfile)
 - [`0.127-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.127.0/npm/Dockerfile)
 - [`0.126`](https://github.com/xdevbase/hugo-builder/blob/v0.126.3/Dockerfile)
