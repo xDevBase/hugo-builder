@@ -23,7 +23,7 @@ RUN apk update && \
     rm -rf /var/cache/apk/*  && \
     ln -s /lib/libc.so.6 /usr/lib/libresolv.so.2
 
-ENV HUGO 0.128.2
+ENV HUGO 0.129.0
 ENV MINIFY 2.20.20
 
 RUN mkdir -p /usr/local/src && \
