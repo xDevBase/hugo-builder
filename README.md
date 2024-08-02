@@ -95,12 +95,12 @@ The latest builds are:
 
 - [`latest`](https://github.com/xdevbase/hugo-builder/blob/main/Dockerfile)
 - [`latest-npm`](https://github.com/xdevbase/hugo-builder/blob/main/npm/Dockerfile)
+- [`0.131`](https://github.com/xdevbase/hugo-builder/blob/v0.131.0/Dockerfile)
+- [`0.131-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.131.0/npm/Dockerfile)
 - [`0.130`](https://github.com/xdevbase/hugo-builder/blob/v0.130.0/Dockerfile)
 - [`0.130-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.130.0/npm/Dockerfile)
 - [`0.129`](https://github.com/xdevbase/hugo-builder/blob/v0.129.0/Dockerfile)
 - [`0.129-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.129.0/npm/Dockerfile)
-- [`0.128`](https://github.com/xdevbase/hugo-builder/blob/v0.128.2/Dockerfile)
-- [`0.128-npm`](https://github.com/xdevbase/hugo-builder/blob/v0.128.2/npm/Dockerfile)
 
 A complete list of available tags can be found on the [docker hub page](https://hub.docker.com/r/xdevbase/hugo-builder/tags).
 
