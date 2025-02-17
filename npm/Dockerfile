@@ -4,7 +4,7 @@
 # that can be found in the LICENSE file.
 #
 
-FROM xdevbase/hugo-builder:0.143
+FROM xdevbase/hugo-builder:0.144
 
 LABEL maintainer="Thomas Harr <xdevthomas@gmail.com>" \
     url="xdevcloud.de"
