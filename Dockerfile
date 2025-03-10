@@ -24,7 +24,7 @@ RUN apk update && \
     ln -s /lib/libc.so.6 /usr/lib/libresolv.so.2
 
 ENV HUGO 0.145.0
-ENV MINIFY 2.20.20
+ENV MINIFY 2.21.3
 
 RUN mkdir -p /usr/local/src && \
     cd /usr/local/src && \
